@@ -1,0 +1,97 @@
+@import "home.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .l-header{
+        @apply flex items-center px-8 py-2 bg-green-50;
+    }
+    .logo{
+        @apply font-bold text-2xl w-1/2 ; 
+    }
+    .logo--light{
+        @apply text-white;
+    }
+    .nav-bar{
+        @apply flex flex-grow gap-8 items-center;
+    }
+    .nav-bar__link{
+        @apply text-primary
+    }
+    .button{
+        @apply bg-primary max-w-min rounded-lg text-white px-6 py-2 whitespace-nowrap;
+    }
+    .button--light{
+        @apply bg-white text-primary;
+    }
+
+    /* title & description layout */
+    .title{
+        @apply text-5xl font-bold whitespace-pre-line text-primary
+    }
+    .l-main{
+        @apply text-center grid content-center justify-items-center gap-6 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50;
+    }
+
+    /* footer */
+    .l-footer{
+        @apply bg-b py-8 px-8 text-white;
+    }
+    .footer-links{
+        @apply grid grid-flow-col gap-12;
+        
+    }
+    .links{
+        @apply flex text-left flex-col gap-2 ;
+        
+    }
+    .links__link
+    {
+        @apply text-white text-sm font-light opacity-60;
+    }
+    .links__link--bolded{
+        @apply font-bold text-lg mb-2 opacity-100; 
+    }
+    
+    .footer__logo{
+        @apply mb-6;
+
+    }
+    .newsletter__form{
+        @apply flex bg-b;
+    }
+    .newsletter__input{
+        @apply  bg-[#2B2E3C] text-sm px-2 capitalize rounded-md;
+    }
+    .newsletter__button{
+        @apply inline-block;
+    }
+    .newsletter__footer{
+        @apply leading-7 text-sm text-white mb-16;
+    
+    }
+
+    /* the copyright area */
+    .l-bottom-row{
+        @apply flex gap-4 items-center; 
+    }
+    .separator{
+        @apply h-[2px] w-full bg-gray-400;
+    }
+    .socials{
+        @apply flex h-auto w-full justify-center gap-4 items-center opacity-60;
+    }
+    .socials__icon{
+        @apply w-3 h-4 object-contain;
+    }
+    .socials__text{
+        @apply whitespace-nowrap
+    }
+
+}
+
+body {
+    font-family: 'Roboto';
+}
