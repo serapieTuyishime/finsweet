@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .l-heading{
+        @apply grid gap-6 my-12;
+    }
+    .trending{
+        @apply border-2 mx-16 p-16 flex gap-4 rounded-xl
+    }
+   .description--text-light{
+    color: #6D6E76;
+   }
+   .trending__text{
+    @apply grid gap-4 justify-items-start w-1/2 pr-2;
+   }
+   .trending__image{
+    @apply w-1/2;
+   }
+
+   /* blogs */
+   .blogs{
+    @apply grid-cols-9 grid content-between gap-4 px-16;
+   }
+   .blog-card{
+    @apply col-span-3 grid gap-4 mb-12
+   }
+   .blog-card__image{
+    @apply w-full object-contain;
+   }
+   .blog-card__title{
+    @apply font-bold text-2xl;
+   }
+   .blog-card__footer{
+    @apply opacity-40 font-semibold;
+   }
+}

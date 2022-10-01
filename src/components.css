@@ -2,6 +2,9 @@
 @import "product.css";
 @import "pricing.css";
 @import "contact.css";
+@import "about us.css";
+@import "blog.css";
+@import "blog-single.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +14,7 @@
     body{
         @apply text-primary;
     }
-    .l-header{
+    .l-navigation{
         @apply flex items-center px-16 py-2 bg-green-50;
     }
     .logo{
@@ -21,13 +24,13 @@
         @apply text-white;
     }
     .nav-bar{
-        @apply flex flex-grow gap-8 items-center;
+        @apply flex flex-grow items-center;
     }
     .nav-bar__link{
-        @apply text-primary whitespace-nowrap;
+        @apply text-primary px-4 whitespace-nowrap hover:bg-gray-300 hover:font-bold;
     }
     .nav-bar__link--active{
-        @apply bg-gray-300 px-4 rounded-lg font-bold;
+        @apply bg-gray-300 rounded-lg font-bold;
     }
     .button{
         @apply bg-primary max-w-min rounded-lg text-white px-6 py-2 whitespace-nowrap;

@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    
+    .l-heading{
+        @apply grid gap-6 my-12 text-center;
+    }
+    .heading__image{
+        @apply px-16;
+    }
+    .headlines{
+        @apply mx-72 text-sm;
+    }
+}

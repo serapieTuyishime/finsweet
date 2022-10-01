@@ -21,7 +21,7 @@
         @apply text-center max-w-max mx-auto grid my-8 gap-4;
     }
     .features__cards{
-        @apply my-8 mx-16 p-8 rounded-2xl flex bg-blue-100
+        @apply my-8 mx-16 p-8 rounded-2xl flex flex-wrap bg-blue-100
     }
     .features__cards--separated{
         @apply divide-x-2 ;
