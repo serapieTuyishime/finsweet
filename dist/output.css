@@ -16,6 +16,12 @@
 
 @tailwind utilities;
 
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -1088,6 +1094,104 @@ video {
   justify-content: space-between;
 }
 
+.contact{
+  margin-left: 4rem;
+  margin-right: 4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact__body{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.contact__form{
+  grid-column: span 3 / span 3;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact__names{
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.contact__input{
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.contact__input--lg{
+  grid-row: span 2 / span 2;
+}
+
+.contact__button{
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* address area */
+
+.contact__address{
+  grid-column: span 2 / span 2;
+  display: grid;
+  align-content: flex-start;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact-card{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-card__text{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-card__icon-area{
+  height: 2rem;
+  width: 2rem;
+}
+
+.contact-card__icon{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contact-card__header{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 body{
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
@@ -1370,6 +1474,11 @@ body{
   white-space: nowrap;
 }
 
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .hidden{
   display: none;
 }
@@ -1431,6 +1540,10 @@ body{
 
 .p-8{
   padding: 2rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-center{

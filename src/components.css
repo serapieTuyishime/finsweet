@@ -1,6 +1,7 @@
 @import "home.css";
 @import "product.css";
 @import "pricing.css";
+@import "contact.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
