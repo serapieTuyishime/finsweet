@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .l-spotlight{
+        @apply px-16 flex gap-16 
+    }
+    .spotlight__text{
+        @apply grid content-center gap-8
+    }
+    .spotlight__buttons{
+        @apply flex gap-4
+    }
+
+    /* features section */
+    .l-product-features{
+        @apply bg-gradient-to-r from-green-50 via-purple-50 to-blue-100 pt-36;
+    }
+    .product-features__cards{
+        @apply flex flex-wrap rounded-tr-3xl mr-32 mt-8 p-8 bg-white
+    }
+    .feature-card{
+        @apply my-4; 
+    }
+    
+    /* insights * 4 */
+    .l-insights{
+        @apply px-16 mr-8 my-8 flex gap-8;
+    }
+    .insights__text{
+        @apply w-1/2 grid content-center gap-4
+    }
+
+    
+     /* time tracking */
+     .l-time-tracking{
+        @apply px-16 my-8 flex gap-8;
+    }
+    .time-tracking__text{
+        @apply w-1/2 grid content-center gap-4
+    }
+
+     /* lead-generation */
+     .l-lead-generation{
+        @apply px-16 my-8 flex gap-8;
+    }
+    .lead-generation__text{
+        @apply w-1/2 grid content-center gap-4
+    }
+
+     /* time tracking */
+     .l-remote-teams{
+        @apply px-16 my-8 flex gap-8;
+    }
+    .remote-teams__text{
+        @apply w-1/2 grid content-center gap-4
+    }
+    
+}

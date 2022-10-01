@@ -4,6 +4,12 @@
 
 @tailwind utilities;
 
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -823,6 +829,126 @@ video {
   opacity: 0.8;
 }
 
+.l-spotlight{
+  display: flex;
+  gap: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.spotlight__text{
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+}
+
+.spotlight__buttons{
+  display: flex;
+  gap: 1rem;
+}
+
+/* features section */
+
+.l-product-features{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #f0fdf4;
+  --tw-gradient-to: rgb(240 253 244 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(250 245 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #faf5ff, var(--tw-gradient-to);
+  --tw-gradient-to: #dbeafe;
+  padding-top: 9rem;
+}
+
+.product-features__cards{
+  margin-right: 8rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-top-right-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 2rem;
+}
+
+.feature-card{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* insights * 4 */
+
+.l-insights{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.insights__text{
+  display: grid;
+  width: 50%;
+  align-content: center;
+  gap: 1rem;
+}
+
+/* time tracking */
+
+.l-time-tracking{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.time-tracking__text{
+  display: grid;
+  width: 50%;
+  align-content: center;
+  gap: 1rem;
+}
+
+/* lead-generation */
+
+.l-lead-generation{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.lead-generation__text{
+  display: grid;
+  width: 50%;
+  align-content: center;
+  gap: 1rem;
+}
+
+/* time tracking */
+
+.l-remote-teams{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.remote-teams__text{
+  display: grid;
+  width: 50%;
+  align-content: center;
+  gap: 1rem;
+}
+
 body{
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
@@ -885,6 +1011,12 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.button--outline{
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(219 234 254 / var(--tw-border-opacity));
 }
 
 /* title & description layout */
@@ -1094,6 +1226,18 @@ body{
   height: 3rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -1101,6 +1245,15 @@ body{
 .bg-purple-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .text-center{

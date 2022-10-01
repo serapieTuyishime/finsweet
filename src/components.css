@@ -1,12 +1,16 @@
 @import "home.css";
+@import "product.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 @layer components{
+    body{
+        @apply text-primary;
+    }
     .l-header{
-        @apply flex items-center px-8 py-2 bg-green-50;
+        @apply flex items-center px-16 py-2 bg-green-50;
     }
     .logo{
         @apply font-bold text-2xl w-1/2 ; 
@@ -18,7 +22,7 @@
         @apply flex flex-grow gap-8 items-center;
     }
     .nav-bar__link{
-        @apply text-primary
+        @apply text-primary whitespace-nowrap;
     }
     .button{
         @apply bg-primary max-w-min rounded-lg text-white px-6 py-2 whitespace-nowrap;
@@ -26,18 +30,47 @@
     .button--light{
         @apply bg-white text-primary;
     }
+    .button--outline{
+        @apply border-2 border-blue-100;
+    }
 
     /* title & description layout */
     .title{
-        @apply text-5xl font-bold whitespace-pre-line text-primary
+        @apply text-5xl font-bold text-primary ;
     }
-    .l-main{
-        @apply text-center grid content-center justify-items-center gap-6 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50;
+    .title--pre{
+        @apply whitespace-pre
+    }
+    .title--2xl{
+        @apply text-2xl; 
+    }
+    .title--3xl{
+        @apply text-3xl; 
+    }
+    .title--4xl{
+        @apply text-4xl; 
+    }
+    .title--gradient{
+        @apply bg-gradient-to-r from-blue-400 via-blue-200 to-blue-100 bg-clip-text text-transparent;
+    }
+    .description{
+        @apply text-lg;
+    }
+    .description--pre{
+        @apply whitespace-pre-line;
+    }
+    .description--sm{
+        @apply text-sm;
+    }
+
+    .l-sign-up
+    {
+        @apply text-center grid content-center justify-items-center gap-8 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50;
     }
 
     /* footer */
     .l-footer{
-        @apply bg-b py-8 px-8 text-white;
+        @apply bg-b py-8 px-16 text-white;
     }
     .footer-links{
         @apply grid grid-flow-col gap-12;
@@ -59,13 +92,22 @@
         @apply mb-6;
 
     }
-    .newsletter__form{
-        @apply flex bg-b;
+    .form{
+        @apply flex bg-b max-w-min;
     }
-    .newsletter__input{
+    .form--light{
+        @apply bg-white rounded-lg;
+    }
+    .form__input{
         @apply  bg-[#2B2E3C] text-sm px-2 capitalize rounded-md;
     }
-    .newsletter__button{
+    .form__input--light{
+        @apply bg-white; 
+    }
+    .form__input--large{
+        @apply w-72
+    }
+    .form__button{
         @apply inline-block;
     }
     .newsletter__footer{
