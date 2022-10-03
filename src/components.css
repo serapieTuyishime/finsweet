@@ -15,7 +15,7 @@
         @apply text-primary;
     }
     .l-navigation{
-        @apply flex items-center px-16 py-2 bg-green-50;
+        @apply flex items-center px-16 py-2;
     }
     .logo{
         @apply font-bold text-2xl w-1/2 ; 
@@ -59,7 +59,7 @@
         @apply text-4xl; 
     }
     .title--gradient{
-        @apply bg-gradient-to-r from-blue-400 via-blue-200 to-blue-100 bg-clip-text text-transparent;
+        @apply bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent;
     }
     .description{
         @apply text-lg;
@@ -73,7 +73,7 @@
 
     .l-sign-up
     {
-        @apply text-center grid content-center justify-items-center gap-8 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50;
+        @apply text-center grid content-center justify-items-center gap-8 py-24 bg-gradient-to-t from-green-200 via-blue-100;
     }
 
     /* footer */

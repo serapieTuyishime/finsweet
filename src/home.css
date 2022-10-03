@@ -4,24 +4,31 @@
 
 @layer components{
     .l-main{
-        @apply text-center grid content-center justify-items-center gap-8 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50;
+        /* @apply text-center grid content-center justify-items-center gap-8 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50; */
+
+        @apply text-center grid gap-8 content-center justify-items-center py-24;
+        
+        background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white)
     }
     .dashboard{
-        @apply w-3/5 h-fit mx-auto border-4 border-purple-300 rounded-xl
+        @apply w-3/5 h-fit mx-auto rounded-xl
     }
     .dashboard__image{
-        @apply object-cover w-full h-full;
+        @apply object-contain w-full h-full;
     }
     .l-dashboard{
-        @apply bg-gradient-to-b from-green-200 via-blue-100 to-green-50
+        @apply text-center
     }  
     
     /* features section */
+    .l-features{
+        @apply my-24;
+    }
     .features__heading{
         @apply text-center max-w-max mx-auto grid my-8 gap-4;
     }
     .features__cards{
-        @apply my-8 mx-16 p-8 rounded-2xl flex flex-wrap bg-blue-100
+        @apply mx-16 p-8 rounded-2xl flex flex-wrap bg-blue-50
     }
     .features__cards--separated{
         @apply divide-x-2 ;
@@ -38,9 +45,9 @@
 
     /* why us section */
     .l-why-us{
-        @apply flex py-8 mx-16 gap-8 my-8;
+        @apply flex py-8 mx-16 gap-12 my-8;
     }
-    .why-us{
+    .why-us__text{
         @apply grid gap-6 w-1/2;
     }
     .specifications{
@@ -56,13 +63,13 @@
 
     /* impressions */
     .l-impressions{
-        @apply px-16 py-14 flex gap-16 bg-gradient-to-r from-white   via-blue-100 to-blue-50;
+        @apply px-16 py-14 flex gap-16 bg-gradient-to-r from-green-100 via-blue-100;
     }
     .impressions__text{
         @apply grid gap-8 content-center w-1/2;
     }
     .impressions__stats{
-        @apply w-1/2;
+        @apply w-1/2 pr-16;
     }
     .impressions__img{
         @apply w-full  object-contain;
@@ -75,7 +82,7 @@
 
     /* discovery */
     .l-discovery{
-        @apply flex px-16 gap-8 my-8;
+        @apply flex px-16 gap-8 my-10;
     }
     .discovery__text{
         @apply grid gap-4 content-center w-1/2;
