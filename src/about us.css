@@ -39,7 +39,7 @@
    }
 
    /* the 6 team members */
-   .teams__cards
+   .team__cards
    {
     @apply col-span-6 grid-cols-6 grid content-between gap-4 ;
    }

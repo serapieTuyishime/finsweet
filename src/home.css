@@ -4,37 +4,43 @@
 
 @layer components{
     .l-main{
-        /* @apply text-center grid content-center justify-items-center gap-8 py-20 bg-gradient-to-t from-green-200 via-blue-100 to-green-50; */
 
-        @apply text-center grid gap-8 content-center justify-items-center py-24;
+        @apply text-center grid gap-8 content-center justify-items-center py-16;
         
-        background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white)
+        background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white, white)
     }
+
+    /* the header form */
+    .sign-up-form{
+        @apply flex p-3 bg-white rounded-2xl max-w-max;
+    }
+
+    .sign-up-form__input{
+        @apply w-80 text-sm px-4 capitalize ;
+    }
+
     .dashboard{
-        @apply w-3/5 h-fit mx-auto rounded-xl
+        @apply w-3/5 h-fit mx-auto
     }
     .dashboard__image{
         @apply object-contain w-full h-full;
-    }
-    .l-dashboard{
-        @apply text-center
-    }  
+    } 
     
     /* features section */
     .l-features{
-        @apply my-24;
+        @apply py-12;
     }
     .features__heading{
-        @apply text-center max-w-max mx-auto grid my-8 gap-4;
+        @apply text-center max-w-max mx-auto grid pb-12 gap-6;
     }
     .features__cards{
-        @apply mx-16 p-8 rounded-2xl flex flex-wrap bg-blue-50
+        @apply mx-16 p-8 gap-4 rounded-2xl grid grid-cols-3 bg-blue-50
     }
     .features__cards--separated{
         @apply divide-x-2 ;
     }
     .feature-card{
-        @apply w-1/3 grid gap-3 px-8 ;
+        @apply grid gap-3 col-span-1 ;
     }
     .feature-card__icon-area{
         @apply h-8 w-8;
@@ -45,13 +51,13 @@
 
     /* why us section */
     .l-why-us{
-        @apply flex py-8 mx-16 gap-12 my-8;
+        @apply grid grid-cols-2 py-8 mx-16 gap-8 my-8;
     }
     .why-us__text{
-        @apply grid gap-6 w-1/2;
+        @apply grid gap-8;
     }
     .specifications{
-        @apply grid gap-6;
+        @apply grid gap-4 justify-items-center;
     }
     .specifications__item{
         @apply flex items-center gap-4;
@@ -88,7 +94,7 @@
         @apply grid gap-4 content-center w-1/2;
     }
     .discovery__cards{
-        @apply grid gap-8
+        @apply grid gap-8;
     }
     .discovery-card{
         @apply flex gap-4
@@ -98,6 +104,9 @@
     }
     .discovery-card__header{
         @apply font-bold text-2xl capitalize;
+    }
+    .discovery-card__text{
+        @apply text-lg;
     }
 
     /* customers cards */

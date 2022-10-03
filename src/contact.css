@@ -20,7 +20,7 @@
    .contact__input{
     @apply h-full p-4 rounded-lg text-sm;
    }
-   .contact__input--lg{
+   .contact__inputlarge{
     @apply row-span-2;
    }
    .contact__button{
