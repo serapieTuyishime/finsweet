@@ -4,7 +4,9 @@
 
 @layer components{
     .l-spotlight{
-        @apply px-16 flex gap-16 
+        @apply px-16 flex gap-16 pt-16;
+        background-image: radial-gradient(farthest-corner at 80% 40%, rgb(222, 242, 251), rgb(235, 255, 250), white, white)
+          
     }
     .spotlight__text{
         @apply grid content-center gap-8
@@ -15,13 +17,13 @@
 
     /* features section */
     .l-product-features{
-        @apply bg-gradient-to-r from-green-50 via-purple-50 to-blue-100 pt-36;
+        @apply bg-gradient-to-r from-green-100 via-blue-100 pt-16;
     }
     .product-features__cards{
-        @apply flex flex-wrap rounded-tr-3xl mr-32 mt-8 p-8 bg-white
+        @apply  rounded-tr-3xl mr-32 mt-8 p-8 gap-4 grid grid-cols-3 bg-white
     }
     .feature-card{
-        @apply my-4; 
+        @apply my-4 ; 
     }
     
     /* insights * 4 */

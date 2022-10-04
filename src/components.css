@@ -51,17 +51,17 @@
         @apply text-5xl font-bold text-primary;
     }
     .title--pre{
-        @apply whitespace-pre
+        @apply whitespace-pre 
     }
-    .titlelarger{
+    .title--larger{
         @apply text-2xl; 
     }
-    .titlelarge{
+    .title--large{
         /* @apply text-3xl;  */
         font-size: 32px;
         line-height: 120%;
     }
-    .titlesuperlarge{
+    .title--superlarge{
         /* @apply text-4xl;  */
         font-size: 48px;
     }
