@@ -6,7 +6,8 @@
 @layer components{
     /* heading of the pricing page */
     .l-plans{
-        @apply grid gap-6 content-center justify-items-center py-16  bg-blue-50;
+        @apply grid gap-6 content-center justify-items-center py-16 ;
+        background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
     }
     .plans__buttons
     {
@@ -31,10 +32,10 @@
     .plan-card__benefits{
         @apply grid px-8 gap-4;
     }
-    .plan-benefit{
+    .plan-card__benefit{
         @apply flex items-center gap-8 
     }
-    .plan-benefit__text{
+    .card__benefit-text{
         @apply font-bold text-lg;
     }
     .plan-card__footer{

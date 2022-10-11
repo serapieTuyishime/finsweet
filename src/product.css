@@ -17,46 +17,44 @@
 
     /* features section */
     .l-product-features{
-        @apply bg-gradient-to-r from-green-100 via-blue-100 pt-16;
+        @apply bg-gradient-to-r from-green-100 to-blue-100 pt-24;
     }
     .product-features__cards{
-        @apply  rounded-tr-3xl mr-32 mt-8 p-8 gap-4 grid grid-cols-3 bg-white
-    }
-    .feature-card{
-        @apply my-4 ; 
+        @apply  rounded-tr-3xl mr-24 mt-8 p-8 gap-4 grid grid-cols-3 bg-white
     }
     
     /* insights * 4 */
     .l-insights{
         @apply px-16 mr-8 my-8 flex gap-8;
+        background-image: radial-gradient(farthest-corner at 0 50%, rgb(222, 242, 251), rgb(235, 255, 250), white, white, white)
     }
     .insights__text{
-        @apply w-1/2 grid content-center gap-4
+        @apply w-1/2 grid content-center gap-6;
+         
+    }
+    .insights__subtitle{
+        @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max;
+    }
+    .insights__title{
+        @apply text-4xl font-bold text-primary;
+        font-size: 48px;
+    }
+    .insights__description{
+        @apply text-base;
+    }
+    .insights__image
+    {
+        @apply p-8 w-1/2
     }
 
     
-     /* time tracking */
-     .l-time-tracking{
-        @apply px-16 my-8 flex gap-8;
-    }
-    .time-tracking__text{
-        @apply w-1/2 grid content-center gap-4
-    }
+ 
 
      /* lead-generation */
      .l-lead-generation{
         @apply px-16 my-8 flex gap-8;
-    }
-    .lead-generation__text{
-        @apply w-1/2 grid content-center gap-4
+        background-image: radial-gradient(farthest-corner at 100% 50%, rgb(222, 242, 251), rgb(235, 255, 250), white, white)
     }
 
-     /* time tracking */
-     .l-remote-teams{
-        @apply px-16 my-8 flex gap-8;
-    }
-    .remote-teams__text{
-        @apply w-1/2 grid content-center gap-4
-    }
     
 }

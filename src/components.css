@@ -17,14 +17,11 @@
     .l-navigation{
         @apply flex items-center px-16 py-2;
     }
-    .logo{
+    .logo, .newsletter__logo{
         @apply font-bold text-2xl w-1/2 ; 
     }
-    .logo--light{
-        @apply text-white;
-    }
-    .logo--padded{
-        @apply mb-6;
+    .newsletter__logo{
+        @apply text-white mb-6;
     }
     .nav-bar{
         @apply flex flex-grow items-center;
@@ -35,49 +32,50 @@
     .nav-bar__link--active{
         @apply bg-gray-300 rounded-lg font-bold;
     }
-    .button{
+    .button, .sign-up__button, .newsletter__button, .plans__button, .impressions__button{
         @apply bg-primary max-w-min rounded-lg text-white font-bold text-center px-6 py-2 whitespace-nowrap;
 
     }
-    .button--light{
+    .button--light, .newsletter__button, .plans__button--light{
         @apply bg-white text-primary;
+    }
+    .plans__button--light{
+        @apply bg-transparent;
     }
     .button--outline{
         @apply border-2 border-blue-100;
     }
 
     /* title & description layout */
-    .title{
+    .title, .sign-up__title, .plans__title, .plan-card__title, .FAQ__title, .question-card__title, .feature-card__title, .impressions__title, .discovery__title{
         @apply text-5xl font-bold text-primary;
     }
-    .title--pre{
+    .title--pre, .sign-up__title{
         @apply whitespace-pre 
     }
     .title--larger{
         @apply text-2xl; 
     }
-    .title--large{
+    .title--large, .question-card__title, .feature-card__title{
         /* @apply text-3xl;  */
         font-size: 32px;
         line-height: 120%;
     }
-    .title--superlarge{
+    .title--superlarge, .plans__title--superlarge, .plan-card__title{
         /* @apply text-4xl;  */
         font-size: 48px;
     }
     .title--gradient{
         @apply bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max;
     }
-    .description{
+    .description, .sign-up__description,.plan-card__description, .plans__description, .FAQ__description, .question-card__description, .feature-card__description, .specifications__description, .impressions__description{
         @apply text-base;
     }
-    .descriptionlarge{
-        @apply text-lg;
-    }
-    .descriptionlarge{
+
+    .description--large, .specifications__description{
         @apply text-xl;
     }
-    .description--pre{
+    .description--pre, .plans__description, .plan-card__description{
         @apply whitespace-pre-line;
     }
 
@@ -90,7 +88,7 @@
     .l-footer{
         @apply bg-b py-8 px-16 text-white;
     }
-    .footer-links{
+    .footer__links{
         @apply grid grid-flow-col gap-12;
         
     }
@@ -106,13 +104,13 @@
         @apply font-bold text-lg mb-2 opacity-100; 
     }
     
-    .form{
+    .form, .newsletter__form{
         @apply flex bg-b max-w-min;
     }
     .form--light{
         @apply bg-white rounded-lg;
     }
-    .form__input{
+    .form__input, .newsletter__input{
         @apply  bg-[#2B2E3C] text-sm px-2 capitalize rounded-md;
     }
     .form__input--light{

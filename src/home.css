@@ -30,6 +30,15 @@
     .l-features{
         @apply py-12;
     }
+    .features__subtitle
+    {
+        @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent mx-auto max-w-max;
+    }
+    .features__title{
+        @apply whitespace-pre text-5xl font-bold text-primary text-center mb-8;
+        font-size: 48px;
+    }
+
     .features__heading{
         @apply text-center max-w-max mx-auto grid pb-12 gap-6;
     }
@@ -37,10 +46,13 @@
         @apply mx-16 p-8 gap-4 rounded-2xl grid grid-cols-3 bg-blue-50
     }
     .features__cards--separated{
-        @apply divide-x-2 ;
+        @apply divide-x-2 bg-purple-100 divide-gray-500;
     }
     .feature-card{
         @apply grid gap-3 col-span-1 ;
+    }
+    .feature-card--padded{
+        @apply pl-8;
     }
     .feature-card__icon-area{
         @apply h-8 w-8;
@@ -48,12 +60,23 @@
     .feature-card__icon{
         @apply w-full h-full object-contain;
     }
+    .feature-card__title{
+        @apply text-5xl font-bold text-primary;
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .feature-card__title--small{
+        @apply text-2xl;
+    }
+    .feature-card__description{
+        @apply text-base;
+    }
 
     /* why us section */
     .l-why-us{
         @apply grid grid-cols-2 py-8 mx-16 gap-8 my-8;
     }
-    .why-us__text{
+    .l-why-us__text{
         @apply grid gap-8;
     }
     .specifications{
@@ -93,6 +116,15 @@
     .discovery__text{
         @apply grid gap-4 content-center w-1/2;
     }
+    .discovery__subtitle{
+        @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max
+    }
+    .discovery__title{
+        font-size: 48px;
+    }
+    .discovery__description{
+        @apply text-base;
+    }
     .discovery__cards{
         @apply grid gap-8;
     }
@@ -113,11 +145,18 @@
     .l-customers{
         @apply text-center px-16
     }
+    .customers__title{
+        @apply text-5xl font-bold text-primary whitespace-pre;
+        font-size: 48px;
+    }
     .customers__cards{
         @apply flex gap-6 my-8;
     }
     .customer-card{
         @apply grid w-1/3 gap-3 content-center border-2 border-blue-200 rounded-2xl justify-items-center font-bold p-10;
+    }
+    .customer-card__description{
+        @apply text-base;
     }
     .customer-card__name{
         @apply text-2xl capitalize
