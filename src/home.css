@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer components{
-    .l-main{
+    .main{
 
         @apply text-center grid gap-8 content-center justify-items-center py-16;
         
         background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white, white)
+    }
+
+    .main__description{
+        @apply description description--large description--pre;
     }
 
     /* the header form */
@@ -73,25 +77,37 @@
     }
 
     /* why us section */
-    .l-why-us{
+    .why-us{
         @apply grid grid-cols-2 py-8 mx-16 gap-8 my-8;
     }
-    .l-why-us__text{
+    .why-us__text{
         @apply grid gap-8;
     }
-    .specifications{
+    .why-us__title{
+        @apply title title--larger title--gradient;
+    }
+    .why-us__title{
+        @apply title title--superlarge;
+    }
+    .why-us__description{
+        @apply text-base;
+    }
+    .why-us__specifications{
         @apply grid gap-4 justify-items-center;
     }
-    .specifications__item{
+    .why-us__specifications-item{
         @apply flex items-center gap-4;
     }
-    .specifications__icon{
+    .why-us__specifications-icon{
         @apply w-8 h-8 object-cover;
+    }
+    .why-us__specifications-description{
+        @apply text-xl;
     }
 
 
     /* impressions */
-    .l-impressions{
+    .impressions{
         @apply px-16 py-14 flex gap-16 bg-gradient-to-r from-green-100 via-blue-100;
     }
     .impressions__text{
@@ -110,7 +126,7 @@
     }
 
     /* discovery */
-    .l-discovery{
+    .discovery{
         @apply flex px-16 gap-8 my-10;
     }
     .discovery__text{
@@ -142,7 +158,7 @@
     }
 
     /* customers cards */
-    .l-customers{
+    .customers{
         @apply text-center px-16
     }
     .customers__title{

@@ -49,6 +49,9 @@
     {
         @apply p-8 w-1/2
     }
+    .insights__picture{
+        @apply w-full h-full object-cover;
+    }
 
     
  

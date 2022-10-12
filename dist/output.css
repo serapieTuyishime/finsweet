@@ -593,7 +593,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.l-main{
+.main{
   display: grid;
   align-content: center;
   justify-items: center;
@@ -602,6 +602,12 @@ video {
   padding-bottom: 4rem;
   text-align: center;
   background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white, white);
+}
+
+.main__description{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  white-space: pre-line;
 }
 
 /* the header form */
@@ -763,7 +769,7 @@ video {
 
 /* why us section */
 
-.l-why-us{
+.why-us{
   margin-left: 4rem;
   margin-right: 4rem;
   margin-top: 2rem;
@@ -775,33 +781,66 @@ video {
   padding-bottom: 2rem;
 }
 
-.l-why-us__text{
+.why-us__text{
   display: grid;
   gap: 2rem;
 }
 
-.specifications{
+.why-us__title{
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  line-height: 2rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #2563eb;
+  --tw-gradient-to: rgb(37 99 235 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #bfdbfe;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  /* @apply text-4xl;  */
+  font-size: 48px;
+}
+
+.why-us__description{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.why-us__specifications{
   display: grid;
   justify-items: center;
   gap: 1rem;
 }
 
-.specifications__item{
+.why-us__specifications-item{
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.specifications__icon{
+.why-us__specifications-icon{
   height: 2rem;
   width: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.why-us__specifications-description{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 /* impressions */
 
-.l-impressions{
+.impressions{
   display: flex;
   gap: 4rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -847,7 +886,7 @@ video {
 
 /* discovery */
 
-.l-discovery{
+.discovery{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: flex;
@@ -921,7 +960,7 @@ video {
 
 /* customers cards */
 
-.l-customers{
+.customers{
   padding-left: 4rem;
   padding-right: 4rem;
   text-align: center;
@@ -1085,6 +1124,13 @@ video {
 .insights__image{
   width: 50%;
   padding: 2rem;
+}
+
+.insights__picture{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* lead-generation */
@@ -1540,7 +1586,7 @@ body{
   padding-bottom: 0.5rem;
 }
 
-.logo__item,  .logo,  .newsletter__logo,  .navigation__logo{
+.logos__item,  .logo,  .newsletter__logo,  .navigation__logo{
   width: 50%;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1553,13 +1599,13 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav-bar{
+.nav-bar,  .navigation__nav-bar{
   display: flex;
   flex-grow: 1;
   align-items: center;
 }
 
-.nav-bar__link{
+.nav-bar__link,  .navigation__link{
   white-space: nowrap;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1567,7 +1613,7 @@ body{
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.nav-bar__link:hover{
+.nav-bar__link:hover,  .navigation__link:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   font-weight: 700;
@@ -1625,6 +1671,15 @@ body{
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
+.main__title{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  white-space: pre;
+}
+
 .title--pre,  .sign-up__title{
   white-space: pre;
 }
@@ -1662,11 +1717,6 @@ body{
 .description,  .sign-up__description, .plan-card__description,  .plans__description,  .FAQ__description,  .question-card__description,  .feature-card__description,  .specifications__description,  .impressions__description{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.description--large,  .specifications__description{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .description--pre,  .plans__description,  .plan-card__description{
@@ -1708,14 +1758,14 @@ body{
   gap: 3rem;
 }
 
-.links{
+.footer__item{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   text-align: left;
 }
 
-.links__link{
+.footer__link{
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 300;
@@ -1724,7 +1774,7 @@ body{
   opacity: 0.6;
 }
 
-.links__link--bolded{
+.footer__link--bolded{
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;

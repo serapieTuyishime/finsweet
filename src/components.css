@@ -17,16 +17,16 @@
     .navigation{
         @apply flex items-center px-16 py-2;
     }
-    .logo__item, .logo, .newsletter__logo, .navigation__logo{
+    .logos__item, .logo, .newsletter__logo, .navigation__logo{
         @apply font-bold text-2xl w-1/2 ; 
     }
     .newsletter__logo{
         @apply text-white mb-6;
     }
-    .nav-bar{
+    .nav-bar, .navigation__nav-bar{
         @apply flex flex-grow items-center;
     }
-    .nav-bar__link{
+    .nav-bar__link, .navigation__link{
         @apply text-primary px-4 whitespace-nowrap hover:bg-gray-300 hover:font-bold;
     }
     .nav-bar__link--active{
@@ -49,6 +49,9 @@
     /* title & description layout */
     .title, .sign-up__title, .plans__title, .plan-card__title, .FAQ__title, .question-card__title, .feature-card__title, .impressions__title, .discovery__title{
         @apply text-5xl font-bold text-primary;
+    }
+    .main__title{
+        @apply title title--pre;
     }
     .title--pre, .sign-up__title{
         @apply whitespace-pre 
@@ -92,15 +95,15 @@
         @apply grid grid-flow-col gap-12;
         
     }
-    .links{
+    .footer__item{
         @apply flex text-left flex-col gap-2 ;
         
     }
-    .links__link
+    .footer__link
     {
         @apply text-white text-sm font-light opacity-60;
     }
-    .links__link--bolded{
+    .footer__link--bolded{
         @apply font-bold text-lg mb-2 opacity-100; 
     }
     
