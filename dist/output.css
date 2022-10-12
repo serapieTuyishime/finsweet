@@ -644,7 +644,7 @@ video {
 
 /* features section */
 
-.l-features{
+.features{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -836,7 +836,7 @@ video {
 
 /* logo area */
 
-.l-logos{
+.logos{
   margin-top: 4rem;
   margin-bottom: 4rem;
   display: flex;
@@ -976,7 +976,7 @@ video {
   opacity: 0.8;
 }
 
-.l-spotlight{
+.spotlight{
   display: flex;
   gap: 4rem;
   padding-left: 4rem;
@@ -998,7 +998,7 @@ video {
 
 /* features section */
 
-.l-product-features{
+.product-features{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #dcfce7;
   --tw-gradient-to: rgb(220 252 231 / 0);
@@ -1019,9 +1019,19 @@ video {
   padding: 2rem;
 }
 
+.product-features__title{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  white-space: pre;
+  text-align: center;
+}
+
 /* insights * 4 */
 
-.l-insights{
+.insights{
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
@@ -1521,7 +1531,7 @@ body{
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.l-navigation{
+.navigation{
   display: flex;
   align-items: center;
   padding-left: 4rem;
@@ -1530,7 +1540,7 @@ body{
   padding-bottom: 0.5rem;
 }
 
-.logo,  .newsletter__logo{
+.logo__item,  .logo,  .newsletter__logo,  .navigation__logo{
   width: 50%;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1663,7 +1673,7 @@ body{
   white-space: pre-line;
 }
 
-.l-sign-up{
+.sign-up{
   display: grid;
   align-content: center;
   justify-items: center;
@@ -1681,7 +1691,7 @@ body{
 
 /* footer */
 
-.l-footer{
+.footer{
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   padding-top: 2rem;
@@ -1803,10 +1813,6 @@ body{
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .hidden{

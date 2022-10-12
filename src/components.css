@@ -14,10 +14,10 @@
     body{
         @apply text-primary;
     }
-    .l-navigation{
+    .navigation{
         @apply flex items-center px-16 py-2;
     }
-    .logo, .newsletter__logo{
+    .logo__item, .logo, .newsletter__logo, .navigation__logo{
         @apply font-bold text-2xl w-1/2 ; 
     }
     .newsletter__logo{
@@ -79,13 +79,13 @@
         @apply whitespace-pre-line;
     }
 
-    .l-sign-up
+    .sign-up
     {
         @apply text-center grid content-center justify-items-center gap-8 py-24 bg-gradient-to-t from-green-200 via-blue-100;
     }
 
     /* footer */
-    .l-footer{
+    .footer{
         @apply bg-b py-8 px-16 text-white;
     }
     .footer__links{

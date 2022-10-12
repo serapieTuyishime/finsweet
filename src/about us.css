@@ -26,7 +26,7 @@
    }
 
    /* values   ---i inherited the features div cz they simply just look alike */
-   .l-features--table{
+   .features--table{
     @apply flex-wrap;
    }
 
