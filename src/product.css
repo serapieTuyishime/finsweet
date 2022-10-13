@@ -4,23 +4,37 @@
 
 @layer components{
     .spotlight{
-        @apply px-16 flex gap-16 pt-16;
-        background-image: radial-gradient(farthest-corner at 80% 40%, rgb(222, 242, 251), rgb(235, 255, 250), white, white)
+        @apply px-16 flex gap-16 pt-16 bg-gradient-to-r from-white via-green-50 to-blue-50;
           
     }
     .spotlight__text{
         @apply grid content-center gap-8
     }
+    .spotlight__title{
+        @apply whitespace-pre text-5xl font-bold text-primary;
+    }
+    .spotlight__description, .features__description{
+        @apply text-base;
+    }
     .spotlight__buttons{
         @apply flex gap-4
     }
+    .spotlight__button{
+        @apply button;
+    }
+    .spotlight__button--outline{
+        @apply button--outline;
+    }
+    .spotlight__button--light{
+        @apply button--light;
+    }
 
     /* features section */
-    .product-features{
-        @apply bg-gradient-to-r from-green-100 to-blue-100 pt-24;
+    .features--bg-gradient{
+        @apply bg-gradient-to-r pb-0 from-green-100 to-blue-100 pt-24;
     }
-    .product-features__cards{
-        @apply  rounded-tr-3xl mr-24 mt-8 p-8 gap-4 grid grid-cols-3 bg-white
+    .features__cards--positioned{
+        @apply rounded-none rounded-tr-3xl ml-0 mr-24 mt-8 p-8 gap-4 grid grid-cols-3 bg-white
     }
     .product-features__title{
         @apply title title--pre text-center;
@@ -28,8 +42,7 @@
     
     /* insights * 4 */
     .insights{
-        @apply px-16 mr-8 my-8 flex gap-8;
-        background-image: radial-gradient(farthest-corner at 0 50%, rgb(222, 242, 251), rgb(235, 255, 250), white, white, white)
+        @apply px-16 mr-8 my-8 flex gap-8 bg-gradient-to-tl from-white via-blue-100 via-green-50 ;
     }
     .insights__text{
         @apply w-1/2 grid content-center gap-6;
@@ -39,17 +52,16 @@
         @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max;
     }
     .insights__title{
-        @apply text-4xl font-bold text-primary;
-        font-size: 48px;
+        @apply text-5xl font-bold text-primary;
     }
     .insights__description{
         @apply text-base;
     }
-    .insights__image
+    .insights__image-area
     {
-        @apply p-8 w-1/2
+        @apply p-8 w-1/2;
     }
-    .insights__picture{
+    .insights__image{
         @apply w-full h-full object-cover;
     }
 

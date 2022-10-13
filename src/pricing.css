@@ -5,9 +5,8 @@
 
 @layer components{
     /* heading of the pricing page */
-    .l-plans{
+    .plans{
         @apply grid gap-6 content-center justify-items-center py-16 ;
-        background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
     }
     .plans__buttons
     {
@@ -20,30 +19,41 @@
     .plans__cards{
         @apply px-16 py-8 flex gap-8;
     }
-    .plan-card{
+    .plans__card{
         @apply py-8 w-1/3 bg-white rounded-xl grid gap-6  ;
     }
-    .plan-card--outlined{
+    .plans__card--outlined{
         @apply bg-blue-50 border-2 border-blue-300;
     }
-    .plan-card__header{
+    .plans__card-header{
         @apply flex gap-6 px-8
     }
-    .plan-card__benefits{
+    .plans__card-image
+    {
+        @apply h-16 w-16 object-contain;
+    }
+    .plans__card-benefits{
         @apply grid px-8 gap-4;
     }
-    .plan-card__benefit{
+    .plans__card-benefit{
         @apply flex items-center gap-8 
     }
-    .card__benefit-text{
+    .plans__card-icon{
+        @apply h-8 w-8 object-contain;
+    }
+    .plans__card-benefit-text{
         @apply font-bold text-lg;
     }
-    .plan-card__footer{
+    .plans__card-footer{
         @apply grid gap-8 justify-items-center text-center p-4
     }
-    .plan-card__period{
+    .plans__card-period{
         @apply text-xs text-primary opacity-50
     }
+    .plans__card-button{
+        @apply button;
+    }
+
 
     /* frequently asked questions */
     .FAQ{
@@ -55,10 +65,16 @@
     .FAQ__cards{
         @apply col-span-3 grid gap-6;
     }
-    .question-card{
+    .FAQ__question{
         @apply bg-white rounded-xl p-8 grid gap-4;
     }
-    .question-card__header{
+    .FAQ__question-header{
         @apply flex justify-between
+    }
+    .FAQ__question-trigger{
+        @apply text-5xl font-bold text-primary;
+    }
+    .FAQ__question-description--hidden{
+        @apply hidden;
     }
 }

@@ -17,10 +17,10 @@
     .navigation{
         @apply flex items-center px-16 py-2;
     }
-    .logos__item, .logo, .newsletter__logo, .navigation__logo{
+    .logos__item, .logo, .footer__logo, .navigation__logo{
         @apply font-bold text-2xl w-1/2 ; 
     }
-    .newsletter__logo{
+    .footer__logo{
         @apply text-white mb-6;
     }
     .nav-bar, .navigation__nav-bar{
@@ -29,14 +29,17 @@
     .nav-bar__link, .navigation__link{
         @apply text-primary px-4 whitespace-nowrap hover:bg-gray-300 hover:font-bold;
     }
-    .nav-bar__link--active{
+    .navigation__link--active{
         @apply bg-gray-300 rounded-lg font-bold;
     }
-    .button, .sign-up__button, .newsletter__button, .plans__button, .impressions__button{
+    .button, .sign-up__button, .footer__button, .plans__button, .impressions__button{
         @apply bg-primary max-w-min rounded-lg text-white font-bold text-center px-6 py-2 whitespace-nowrap;
 
     }
-    .button--light, .newsletter__button, .plans__button--light{
+    .navigation__button{
+        @apply button;
+    }
+    .button--light, .footer__button, .plans__button--light{
         @apply bg-white text-primary;
     }
     .plans__button--light{
@@ -47,7 +50,7 @@
     }
 
     /* title & description layout */
-    .title, .sign-up__title, .plans__title, .plan-card__title, .FAQ__title, .question-card__title, .feature-card__title, .impressions__title, .discovery__title{
+    .title, .sign-up__title, .plans__title, .plans__card-title, .FAQ__title, .FAQ__question-title, .features__card-title, .impressions__title, .discovery__title{
         @apply text-5xl font-bold text-primary;
     }
     .main__title{
@@ -59,26 +62,22 @@
     .title--larger{
         @apply text-2xl; 
     }
-    .title--large, .question-card__title, .feature-card__title{
-        /* @apply text-3xl;  */
-        font-size: 32px;
-        line-height: 120%;
+    .title--large, .FAQ__question-title, .features__card-title{
+        @apply text-3.5xl; 
+
     }
-    .title--superlarge, .plans__title--superlarge, .plan-card__title{
-        /* @apply text-4xl;  */
-        font-size: 48px;
-    }
+
     .title--gradient{
         @apply bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max;
     }
-    .description, .sign-up__description,.plan-card__description, .plans__description, .FAQ__description, .question-card__description, .feature-card__description, .specifications__description, .impressions__description{
+    .description, .sign-up__description,.plans__card-description, .plans__description, .FAQ__description, .FAQ__question-description, .features__card-description, .specifications__description, .impressions__description{
         @apply text-base;
     }
 
     .description--large, .specifications__description{
         @apply text-xl;
     }
-    .description--pre, .plans__description, .plan-card__description{
+    .description--pre, .plans__description, .plans__card-description{
         @apply whitespace-pre-line;
     }
 
@@ -107,13 +106,13 @@
         @apply font-bold text-lg mb-2 opacity-100; 
     }
     
-    .form, .newsletter__form{
+    .form, .footer__form{
         @apply flex bg-b max-w-min;
     }
     .form--light{
         @apply bg-white rounded-lg;
     }
-    .form__input, .newsletter__input{
+    .form__input, .footer__input{
         @apply  bg-[#2B2E3C] text-sm px-2 capitalize rounded-md;
     }
     .form__input--light{
@@ -125,25 +124,25 @@
     .form__button{
         @apply inline-block;
     }
-    .newsletter__footer{
+    .footer__description{
         @apply leading-7 text-sm text-white mb-16;
     
     }
 
     /* the copyright area */
-    .l-bottom-row{
+    .footer__copyright{
         @apply flex gap-4 items-center; 
     }
-    .separator{
+    .footer__separator{
         @apply h-[2px] w-full bg-gray-400;
     }
-    .socials{
+    .footer__socials{
         @apply flex h-auto w-full justify-center gap-4 items-center opacity-60;
     }
-    .socials__icon{
+    .footer__icon{
         @apply w-3 h-4 object-contain;
     }
-    .socials__text{
+    .footer__socials-text{
         @apply whitespace-nowrap
     }
 
