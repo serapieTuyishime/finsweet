@@ -1,0 +1,43 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    
+    .heading{
+        @apply grid gap-6 my-12 text-center;
+    }
+    .heading__image-area{
+        @apply px-16;
+    }
+    .heading__image{
+        @apply w-full object-contain;
+    }
+    .headlines{
+        @apply mx-72 text-sm;
+    }
+    .heading__title, .headlines__title{
+        @apply text-5xl font-bold text-primary whitespace-pre
+    }
+    .heading__subtitle{
+        @apply text-xl opacity-50; 
+    }
+    .headlines__description{
+        @apply text-base whitespace-pre-line;
+    }
+    .headlines__subtitle
+    {
+        @apply title my-8;
+    }
+    .headlines__text{
+        @apply text-base
+    }
+    .headlines__text--padded{
+        @apply pl-8 py-8;
+    }
+    .headline__director{
+        @apply title my-16 text-center;
+    }
+}

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .main{
+
+        @apply text-center grid gap-8 content-center justify-items-center py-16;
+
+    }
+
+    .main__description{
+        @apply description description--large description--pre;
+    }
+
+    /* the header form */
+    .main__form{
+        @apply flex p-3 bg-white rounded-2xl max-w-max;
+    }
+
+    .main__form-input{
+        @apply w-80 text-sm px-4 capitalize ;
+    }
+    .main__form-button{
+        @apply button;
+    }
+
+    .main__dashboard{
+        @apply w-3/5 h-fit mx-auto
+    }
+    .spotlight__image, .main__image{
+        @apply object-contain w-full h-full;
+    } 
+    
+    /* features section */
+    .features{
+        @apply py-12;
+    }
+    .features__subtitle, .why-us__subtitle
+    {
+        @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent mx-auto max-w-max;
+    }
+    .why-us__subtitle{
+        @apply mx-0
+    }
+    .features__title{
+        @apply whitespace-pre text-5xl font-bold text-primary text-center mb-8;
+
+    }
+
+    .features__heading{
+        @apply text-center max-w-max mx-auto grid pb-12 gap-6;
+    }
+    .features__description{
+        @apply text-base;
+    }
+    .features__description--centered{
+        @apply  text-center mb-8;
+    }
+    .features__cards{
+        @apply mx-16 p-8 gap-4 rounded-2xl grid grid-cols-3 bg-blue-50
+    }
+    .features__cards--bg-light{
+        @apply bg-purple-100;
+    }
+    .features__cards--separated{
+        @apply divide-x-2 bg-purple-100 divide-gray-500;
+    }
+
+    .features__card{
+        @apply grid gap-3 col-span-1 ;
+    }
+    .features__card--padded{
+        @apply pl-8;
+    }
+    .features__card-icon-area{
+        @apply h-8 w-8;
+    }
+    .features__card-icon{
+        @apply w-full h-full object-contain;
+    }
+    .features__card-title{
+        @apply text-5xl font-bold text-primary;
+
+    }
+    .features__card-title--small{
+        @apply text-2xl;
+    }
+    .features__card-description{
+        @apply text-base;
+    }
+
+    /* why us section */
+    .why-us{
+        @apply grid grid-cols-2 py-8 mx-16 gap-8 my-8;
+    }
+    .why-us__text{
+        @apply grid gap-8;
+    }
+    .why-us__title{
+        @apply title title--larger title--gradient;
+    }
+    .why-us__title{
+        @apply title;
+    }
+    .why-us__description{
+        @apply text-base;
+    }
+    .why-us__specifications{
+        @apply grid gap-4 justify-items-center;
+    }
+    .why-us__specifications-item{
+        @apply flex items-center gap-4;
+    }
+    .why-us__specifications-icon{
+        @apply w-8 h-8 object-cover;
+    }
+    .why-us__specifications-description{
+        @apply text-xl;
+    }
+
+
+    /* impressions */
+    .impressions{
+        @apply px-16 py-14 flex gap-16 bg-gradient-to-r from-green-100 via-blue-100;
+    }
+    .impressions__text{
+        @apply grid gap-8 content-center w-1/2;
+    }
+    .impressions__stats{
+        @apply w-1/2 pr-16;
+    }
+    .impressions__img{
+        @apply w-full  object-contain;
+    }
+
+    /* logo area */
+    .logos{
+        @apply px-16 my-16 flex gap-16;
+    }
+
+    /* discovery */
+    .discovery{
+        @apply flex px-16 gap-8 my-10;
+    }
+    .discovery__text{
+        @apply grid gap-4 content-center w-1/2;
+    }
+    .discovery__subtitle{
+        @apply text-2xl font-bold text-primary bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent max-w-max
+    }
+    .discovery__title{
+        @apply text-5xl;
+    }
+    .discovery__description{
+        @apply text-base;
+    }
+    .discovery__cards{
+        @apply grid gap-8;
+    }
+    .discovery__card{
+        @apply flex gap-4
+    }
+    .discovery__card-text{
+        @apply flex flex-col gap-2
+    }
+    .discovery__card-header{
+        @apply font-bold text-2xl capitalize;
+    }
+    .discovery__card-text{
+        @apply text-lg;
+    }
+
+    /* customers cards */
+    .customers{
+        @apply text-center px-16
+    }
+    .customers__title{
+        @apply text-5xl font-bold text-primary whitespace-pre;
+    
+    }
+    .customers__cards{
+        @apply flex gap-6 my-8;
+    }
+    .customers__card{
+        @apply grid w-1/3 gap-3 content-center border-2 border-blue-200 rounded-2xl justify-items-center font-bold p-10;
+    }
+    .customers__card-description{
+        @apply text-base;
+    }
+    .customers__card-name{
+        @apply text-2xl capitalize
+    }
+    .customers__card-profession{
+        @apply font-extralight opacity-80 text-lg
+    }
+}

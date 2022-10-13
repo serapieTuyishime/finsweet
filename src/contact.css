@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+   .contact{
+    @apply px-16 py-12 ;
+    /* bg-radialgradient  */
+    
+   } 
+   .contact__header{
+    @apply rounded-t-2xl bg-blue-50 pt-8 pl-8;
+   }
+   .contact__title{
+    @apply pb-4 text-primary font-bold text-3.5xl ;
+
+   }
+   .contact__description{
+    @apply text-base;
+   }
+   .contact__body{
+    @apply grid grid-cols-5 gap-8 bg-blue-50 p-8 rounded-b-2xl;
+   }
+   .contact__form{
+    @apply col-span-3 grid grid-rows-6 gap-4 mt-6;
+   }
+   .contact__names{
+    @apply grid grid-flow-col gap-4 w-full;
+   }
+   
+   .contact__input{
+    @apply h-full p-4 rounded-lg text-sm;
+   }
+   .contact__input--large{
+    @apply row-span-2;
+   }
+   .contact__button{
+    @apply bg-primary rounded-lg text-white px-6 py-2;
+   }
+
+    /* address area */
+    .contact__address{
+        @apply col-span-2 grid content-start gap-6 py-8 ;
+       }
+    .contact__card{
+        @apply flex gap-4 items-center
+    }
+    .contact__card-text{
+        @apply flex flex-col gap-2
+    }
+    .contact__card-icon-area{
+        @apply w-8 h-8;
+    }
+    .contact__card-icon{
+        @apply  w-full h-full object-contain;
+    }
+    .contact__card-header{
+        @apply font-bold text-2xl capitalize;
+    }
+}
